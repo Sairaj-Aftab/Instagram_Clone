@@ -1,0 +1,85 @@
+.user-pro-title {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+  width: 840px;
+  margin: auto;
+  padding-bottom: 20px;
+  .user-pro-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .user-pro-title-right {
+    .user-pro-title-right-top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .user-name {
+        font-size: 28px;
+        font-weight: 300;
+        color: gray;
+      }
+      .edit-button {
+        border: 1.5px solid gray;
+        padding: 5px 8px;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .setting-icon {
+        font-size: 30px;
+        color: gray;
+        cursor: pointer;
+        transform: translateY(2px);
+      }
+    }
+    .user-pro-title-right-middle {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin: 20px 0;
+      .count {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        strong {
+          font-size: 14px;
+          font-weight: 500;
+          color: #111;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: #111;
+        }
+      }
+    }
+    .user-pro-title-right-bottom {
+      .real-name {
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+      }
+      .user-about {
+        font-size: 16px;
+        color: gray;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      .user-web-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

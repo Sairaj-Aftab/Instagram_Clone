@@ -1,0 +1,105 @@
+.login-wraper {
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    input {
+      width: 80%;
+      height: 35px;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      background-color: #fafafa;
+      border-radius: 5px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    .log-in {
+      width: 80%;
+      height: 35px;
+      border: none;
+      margin-bottom: 10px;
+      background-color: #0095f6;
+      border-radius: 6px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+  .or {
+    color: gray;
+    font-size: 14px;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: #dbdbdb;
+      left: 0;
+      top: 9px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: #dbdbdb;
+      right: 0;
+      top: 9px;
+    }
+  }
+  .login-with-fb {
+    font-weight: 500;
+    font-size: 14px;
+    color: #385185;
+    margin: 20px 0;
+    .fb-icon {
+      margin-right: 5px;
+    }
+  }
+  .forgot-password {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+  }
+}
+.login-button {
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 0;
+  .link {
+    font-weight: 500;
+  }
+}
+.get-app {
+  width: 350px;
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+  .app-img {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    img {
+      width: 135px;
+    }
+  }
+}

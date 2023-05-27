@@ -1,0 +1,150 @@
+.edit-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 34px;
+  flex: 690px;
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 34px;
+    margin-bottom: 16px;
+    .user-img {
+      flex: 0 0 194px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 32px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+    .user-info-name {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--primary-text);
+      }
+      p {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--primary-button);
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-text);
+        }
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    li {
+      display: flex;
+      justify-content: flex-start;
+
+      h4 {
+        color: rgb(var(--primary-text));
+        flex: 0 0 194px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: right;
+        padding-right: 32px;
+      }
+      .input-des {
+        flex-basis: 355px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+        flex-shrink: 0;
+        justify-content: flex-start;
+        input {
+          width: 100%;
+          border: 1px solid rgb(219, 219, 219);
+          height: 32px;
+          font-size: 16px;
+          font-weight: 400;
+          color: var(--primary-text);
+          padding: 0 10px;
+          border-radius: 3px;
+        }
+        textarea {
+          width: 100%;
+          border: 1px solid rgb(219, 219, 219);
+          height: 52px;
+          font-size: 16px;
+          font-weight: 400;
+          color: var(--primary-text);
+          padding: 5px 10px;
+          border-radius: 3px;
+        }
+        p {
+          font-size: 12px;
+          color: var(--secondary-text);
+          font-weight: 400;
+          margin-top: 15px;
+          line-height: 16px;
+        }
+      }
+    }
+    .personal-information {
+      display: flex;
+      flex-direction: column;
+      width: 355px;
+      align-self: center;
+      margin-left: 32px;
+      margin-top: 16px;
+      h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--secondary-text);
+        margin-bottom: 3px;
+      }
+      p {
+        font-size: 12px;
+        color: var(--secondary-text);
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 405px;
+      margin-left: 194px;
+      button {
+        background-color: var(--primary-button);
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        &:disabled {
+          background-color: #4cb5f9;
+          cursor: auto;
+        }
+      }
+      p {
+        color: 0.875rem;
+        font-weight: 600;
+        color: var(--primary-button);
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-text);
+        }
+      }
+    }
+  }
+}

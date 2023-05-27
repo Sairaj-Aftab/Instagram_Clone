@@ -1,0 +1,104 @@
+.following-popup-user {
+  .wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .box {
+      width: 400px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      .header {
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        padding: 10px 0;
+        h2 {
+          font-size: 16px;
+          color: var(--primary-text);
+          font-weight: 600;
+          text-align: center;
+        }
+        .icon {
+          position: absolute;
+          right: 10px;
+          top: 6px;
+          font-size: 28px;
+          width: 28px;
+          height: 28px;
+          cursor: pointer;
+        }
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        gap: 10px;
+        overflow: auto;
+        padding: 10px;
+        .user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .name-info {
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+              .user-name {
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--primary-text);
+              }
+              .full-name {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--secondary-text);
+              }
+            }
+          }
+          .following-btn {
+            color: var(--primary-text);
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            padding: 7px 18px;
+            border-radius: 8px;
+            background-color: #efefef;
+            &:hover {
+              background-color: #dbdbdb;
+            }
+          }
+          .follow-btn {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            padding: 7px 18px;
+            border-radius: 8px;
+            background-color: var(--primary-button);
+          }
+        }
+        h2 {
+          text-align: center;
+          color: var(--primary-text);
+          font-size: 20px;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

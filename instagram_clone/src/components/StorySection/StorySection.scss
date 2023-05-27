@@ -1,0 +1,52 @@
+.story-section {
+  position: relative;
+  .wraper {
+    display: flex;
+    gap: 19px;
+    overflow: hidden;
+    .user {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 62px;
+        height: 62px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid red;
+        padding: 2px;
+      }
+      h4 {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--primary-text);
+        width: 62px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+  .icon {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-size: 22px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+  }
+  .prev {
+    left: 12px;
+  }
+  .next {
+    right: 12px;
+  }
+}

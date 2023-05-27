@@ -1,0 +1,41 @@
+.account-edit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    .left-header {
+      border-right: 1px solid #ccc;
+      flex: 245px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          a {
+            padding: 16px 16px 16px 30px;
+            border-left: 2px solid #ffffff;
+            cursor: pointer;
+            display: block;
+
+            &:hover {
+              background-color: #fafafa;
+              border-color: #dbdbdb;
+            }
+            &.active {
+              border-color: black;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              color: var(--primary-text);
+            }
+          }
+        }
+      }
+    }
+  }
+}
